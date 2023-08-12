@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+  
+  <main>
+        <h2>Welcome to the Delicious Recipies Website!</h2>
+        <p>"Indulge your senses in a symphony of flavors at Delicious Bites Restaurant. Our menu celebrates a rich tapestry of global influences, promising a memorable dining experience that satisfies both the palate and the soul."</p>
+        <div class="images">
+            <img id="imgs" src="img-1.jpg" height="250px" width="250px" alt="img1">
+            <img id="imgs" src="img-2.jpg" height="250px" width="300px" alt="img2">
+        </div>
+    </main>
+
+  <div class = "container">
+    <div class = "meal-wrapper">
+      <div class = "meal-search">
+        <h2 class = "title">Find Meals For Your Ingredients</h2>
+        <blockquote>Real food doesn't have ingredients, real food is ingredients.<br>
+          <cite>- Jamie Oliver</cite>
+        </blockquote>
+
+        <div class = "meal-search-box">
+          <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
+          <button type = "submit" class = "search-btn btn" id = "search-btn">
+            <i class = "fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class = "meal-result">
+        <h2 class = "title">Your Search Results:</h2>
+        <div id= "meal">
+          <!-- meal item -->
+          <!-- <div class = "meal-item">
+            <div class = "meal-img">
+              <img src = "food.jpg" alt = "food">
+            </div>
+            <div class = "meal-name">
+              <h3>Potato Chips</h3>
+              <a href = "#" class = "recipe-btn">Get Recipe</a>
+            </div>
+          </div> -->
+          <!-- end of meal item -->
+        </div>
+      </div>
+
+
+      <div class = "meal-details">
+        <!-- recipe close btn -->
+        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+          <i class = "fas fa-times"></i>
+        </button>
+
+        <!-- meal content -->
+        <div class = "meal-details-content">
+          <!-- <h2 class = "recipe-title">Meals Name Here</h2>
+          <p class = "recipe-category">Category Name</p>
+          <div class = "recipe-instruct">
+            <h3>Instructions:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+          </div>
+          <div class = "recipe-meal-img">
+            <img src = "food.jpg" alt = "">
+          </div>
+          <div class = "recipe-link">
+            <a href = "#" target = "_blank">Watch Video</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Us -->
+  <section class="about">
+    <div>
+      <img src="about.jpg" width="600px" alt="about">
+    </div>
+    <div class="lft">
+    <h2>About Us</h2>
+    <p>Welcome to Delicious Recipies Website! We're dedicated to sharing culinary inspiration through a diverse range of recipes. From traditional classics to contemporary creations, our platform is your go-to resource for all things delicious. Join us on a culinary journey filled with flavors, stories, and a shared love for the art of cooking.</p>
+  </div>
+</section>
+
+<!-- Contact Us -->
+<section class="contact">
+  <div class="contact-img">
+    <img src="contact-us.avif"  width="350px" alt="contact us">
+    </div>
+    <div class="lft">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"  required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      
+      <button class="butn" type="submit">Submit</button>
+  </form>
+</div>
+</section>
+
+
+  <script src = "script.js"></script>
+</body>
+<!-- footer -->
+<footer>
+  <div class="footer-bottom">
+      <p>&copy; 2023 Delicious Recipies Website. All rights reserved.</p>
+  </div>
+</footer>
+
+</html>
